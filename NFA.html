@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>World Ecological Footprint and Biocapacity</title>
+  <!-- Load leaflet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" type="text/css" crossorigin="">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" crossorigin=""></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.4.3/proj4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.1/proj4leaflet.min.js"></script>
+
+  <!-- Load Bootstrap -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/2.2.1/js/bootstrap.min.js"></script>
+  <!-- Note: I had to slightly modified boostrap.css, to avoid an incompatibility with Leaflet,
+       so it is a local version:-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <!-- Load D3 -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <!--load the local data, css and scripts files: -->
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="data/NFACountries.js"></script>
+  <!-- This is the GeoJSON for the map. -->
+  <script src="js/NFAmain.js"></script>
+  <script src="js/NfaLineChart.js"></script>
+</head>
+
+<body onload="init()">
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <h1>World Biocapacity and Ecological Footprint</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span7">
+        <div id="map">
+        </div>
+        <div class="mapCaption">
+          By country, in 2014. The unit is the <a href="https://www.footprintnetwork.org/resources/glossary/#global-hectare-gha" target="_blank">global hectare</a> (gha).
+          <p style="font-size: 9px;text-align:left;padding-top:20px"><a style="color:#aaa" href="acknowledgments.html">Acknowledgements</a></p>'
+
+        </div>
+      </div>
+      <div class="span5">
+        <div id='blurb'></div>
+        <div id="numberOfEarths"></div>
+        <div id="chart"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</body>
+
+</html>
