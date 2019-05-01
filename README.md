@@ -1,7 +1,7 @@
 # NFA-Leaflet-and-D3-Dashboard
 
 Visualizing Ecological Footprint Data 
-* This is an interactive visualization of ecological footprint and biocapacity data per country. 
+* This is an interactive dashboard visualizing the ecological footprint and biocapacity data per country.
 * The main data comes from the nonprofit Global Footprint Network.  
 * I prepared the data layers in QGIS and delivered them in GeoJSON. 
 I built the basemap with QGIS and Tilemill based on the open-access Natural Earth dataset, and delivered it as multiscale tiles, including a transparent layer for the labels. 
